@@ -1,0 +1,23 @@
+---
+import Quotes from "../assets/svg/Quotes.astro";
+
+const { content, name, title, img } = Astro.props;
+---
+
+<div class="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 feedback-card">
+  <Quotes height={27} width={42} />
+  <p class="font-poppins font-normal text-lg leading-[32px] text-white my-10">
+    {content}
+  </p>
+  <div class="flex flex-row">
+    <img src={img} alt={name} height={48} width={48} decoding="async" loading="lazy" class="w-12 h-12 rounded-full" />
+    <div class="flex flex-col ml-4">
+      <p class="font-poppins font-semibold text-xl leading-8 text-white">
+        {name}
+      </p>
+      <p class="font-poppins font-normal text-base leading-6 text-dimWhite">
+        {title}
+      </p>
+    </div>
+  </div>
+</div>

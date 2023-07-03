@@ -1,0 +1,20 @@
+---
+import styles from "../styles";
+import Button from "./Button.astro";
+---
+
+<section
+  class={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
+>
+  <div class="flex flex-1 flex-col">
+    <h2 class={styles.heading2}>Contact Us!</h2>
+    <form action="/action_page.php">
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+  <input type="submit">
+</form>
+  </div>
+  <div class={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
+    <Button />
+  </div>
+</section>

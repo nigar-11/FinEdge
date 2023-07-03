@@ -1,0 +1,19 @@
+---
+import styles from "../styles";
+
+import ArrowUp from "../assets/svg/ArrowUp.astro";
+---
+
+<div class={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer`}>
+  <div class={`${styles.flexCenter} flex-col bg-primary w-full h-full rounded-full`}>
+    <div class={`${styles.flexStart} flex-row`}>
+      <p class="font-poppins font-medium text-lg leading-[23px] mr-2">
+        <span class="text-gradient">Get</span>
+      </p>
+      <ArrowUp />
+    </div>
+    <p class="font-poppins font-medium text-lg leading-[23px]">
+      <span class="text-gradient">Started</span>
+    </p>
+  </div>
+</div>
